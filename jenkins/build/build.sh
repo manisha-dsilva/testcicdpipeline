@@ -7,6 +7,6 @@ echo "***************************"
 echo "***Building docker image***"
 echo "***************************"
 
-cd jenkins/build/ && docker-compose --file docker-compose-build.yml build --no-cache
+cd jenkins/build/ && docker-compose -f docker-compose-build.yml build --no-cache
 
 
