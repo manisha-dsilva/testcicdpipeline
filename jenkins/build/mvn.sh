@@ -4,7 +4,7 @@ echo "**********************"
 echo "**Building jar********"
 echo "**********************"
 
-docker cp jenkins:/var/jenkins_home ../../../../jenkins
+docker cp jenkins:/var/jenkins_home ../jenkins
 
 WORKSPACE=/home/manisha/jenkins/jenkins_home/workspace/PipelineCICD
 
