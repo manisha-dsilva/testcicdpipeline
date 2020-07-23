@@ -7,4 +7,4 @@
 #BUIlD_TAG=$(sed -n '2p' /tmp/.auth)
 
 docker login -u manishadsilva -p $PASS
-docker-compose up -d
+cd jenkins/deploy && docker-compose up -d
