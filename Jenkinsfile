@@ -23,13 +23,14 @@ pipeline {
         stage('Test') { 
             steps {
                 sh './jenkins/test/mvn.sh mvn test'
-            }
-            script {
+                script {
                     def testResults = findFiles(glob: 'java-app/target/surefire-reports/*.xml')
                     for(xml in testResults) {
                         touch xml.getPath()
                     }
                 }
+
+            }
              post {
                 always {
                    junit 'java-app/target/surefire-reports/*.xml'
