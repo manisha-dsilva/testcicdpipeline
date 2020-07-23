@@ -6,4 +6,3 @@ echo $PASS >> /tmp/.auth
 
 echo "****Deploying*******"
 
-sh ./jenkins/deploy/publish.sh
