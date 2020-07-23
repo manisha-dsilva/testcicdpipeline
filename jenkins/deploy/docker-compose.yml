@@ -2,5 +2,5 @@ version: '3'
 services:
      maven:
          image: "manishadsilva/$IMAGE:$BUILD_TAG"
-         container_name: maven-app
+         container_name: deployed
 
