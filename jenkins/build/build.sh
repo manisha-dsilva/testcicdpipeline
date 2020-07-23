@@ -9,6 +9,6 @@ echo "***************************"
 
 #export BUILD_TAG=$(sed -n '2p' /tmp/.auth)
 
-#cd jenkins/build/ && docker-compose -f docker-compose-build.yml build --no-cache
+cd jenkins/build/ && docker-compose -f docker-compose-build.yml build --no-cache
 
 
