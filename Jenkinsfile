@@ -3,7 +3,6 @@ pipeline {
     
     environment {
         PASS = credentials('registry-pass')
-        PATH = "$PATH:/usr/local/bin"
     }
 
     stages {
