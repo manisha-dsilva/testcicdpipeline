@@ -7,4 +7,4 @@
 #BUIlD_TAG=$(sed -n '2p' /tmp/.auth)
 
 docker login -u manishadsilva -p $PASS
-cd ../../maven && docker-compose up -d
+docker-compose up -d
