@@ -1,5 +1,9 @@
 pipeline {
     agent any 
+    
+    environment {
+        PATH = "$PATH:/usr/local/bin"
+    }
 
     environment {
         PASS = credentials('registry-pass')
