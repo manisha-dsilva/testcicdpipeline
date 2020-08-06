@@ -3,7 +3,6 @@ pipeline {
     
     environment {
         PASS = credentials('registry-pass')
-        ROOT = credentials('root-pass')
     }
 
     stages {
