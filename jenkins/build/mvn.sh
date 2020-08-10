@@ -4,8 +4,10 @@ echo "**********************"
 echo "**Building jar********"
 echo "**********************"
 
+export JENKINS_PATH=/var/jenkins_home/workspace
+
 chown 1000 /var/run/docker.sock
-docker cp jenkins:/var/jenkins_home/workspace/$PROJECT ../jenkins_home/workspace
+docker cp jenkins:$JENKINS_PATH/$PROJECT ../jenkins_home/workspace
 
 WORKSPACE=/home/manisha/jenkins/jenkins_home/workspace/$PROJECT
 
