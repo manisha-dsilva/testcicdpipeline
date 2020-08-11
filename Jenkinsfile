@@ -22,7 +22,7 @@ pipeline {
 
         stage('Test') { 
             steps {
-                sh './jenkins/test/mvn.sh mvn test'
+                sh './jenkins/test/mvn.sh mvn clean test'
                 script {
                     def testResults = findFiles(glob: 'java-app/target/surefire-reports/*.xml')
                     for(xml in testResults) {
