@@ -5,7 +5,7 @@ echo "**Building jar********"
 echo "**********************"
 
 
-sudo chown 1000:1000 jenkins-home -R
+sudo chown 1000:1000 /var/lib/docker/volumes/jenkins-data -R
 
 sudo chown 1000 /var/run/docker.sock
 
